@@ -49,6 +49,8 @@ void vidaDeSUporte(int frase) {
 		case 4:
 			printf("10 anos nessa indústria vital para desistalar o Baidu\n");
 			break;
+		default:
+			printf("Vá para o site: https://vidadesuporte.com.br/\n");
 	
 	}
 	
@@ -57,7 +59,54 @@ float tempoDePreparo(float ml) {
 	float vazao = 50/17; // Vazão nespresso ml/s
 	return vazao * ml;
 }
+
+int colheresDePo (int xicaras) {
+	// Baseado na finlandesa mocha master
 	
+	switch(xicaras) {
+		case 2:
+			return 1;
+		case 4:
+			return 2;
+		case 6:
+			return 3;
+		case 8:
+			return 4;
+		case 10:
+			return 5;
+		default:
+			printf("Quantidade inválida de xícaras\n");
+			return 0;
+	
+	}
+
+
+}
+	
+}
+
+void marcaCafeteira(int marca) {
+
+	switch(marca) {
+		case 1:
+			printf("Você escolheu a cafeteira prima, procure o preço no google\n");
+			break;
+		case 2:
+			printf("Você escolheu a cafeteira oster, procure o preço no google\n");
+			break;
+		case 3:
+			printf("Você escolheu a cafeteira mocha master, importe da Finlândia\n");
+			break;
+		case 4:
+			printf("Você esoclheu a cafeteira tramontina, não se esqueça de consultar o google\n");
+			break;
+		default:
+			printf("Você escoheu uma cafeteira genérica do Paraguay, seu café ficaará nogento\n"):
+			break;
+	
+	}
+
+
 }
 
 
