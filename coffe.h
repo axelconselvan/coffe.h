@@ -2,6 +2,7 @@
 #define COFFE_H
 
 #include <stdio.h>
+#include <string.h>
 
 void apresentacao() 
 {
@@ -109,9 +110,77 @@ void marcaCafeteira(int marca) {
 
 }
 
+void garrafaTermica(int escolha) {
+	switch(escolha){
+		case 1:
+			printf("Você escolheu ampola vidro, seu café ficará quentinho por mais tempo\n");
+			break;
+		case 2:
+			printf("Você escolheu ampola inox, essa ampola é mais resitente\n");
+			break;
+		
+	
+	
+	}
 
+}
 
+void desatres(int escolha) {
 
+	switch(escolha) {
+		case 1:
+			printf("Seu café não coube na garrafa, chame seus funcionários para tomar antes que esfrie\n");
+			break;
+		case 2:
+			printf("O estgiário bateu com a garrafa na parede, ficamos sem café\n");
+			break;
+		default:
+			printf("Dia de sorte, não houve nehum desatre bna empresa\n");
+			break;
+	
+	}
+
+}
+
+struct capsula {
+	char nome[20];
+	char descricao[50];
+	float preço;
+
+}
+
+struct capsula napoli;
+strcpy(napoli.nome,"napoli\n");
+strcpy(napoli.descricao,"Café Excepcionalmente Torrado e Cremoso\n");
+
+struct capsula palermo
+strcpy(palermo.nome,"Palermo Kazzar\n");
+strcpy(palermo.descricao,"Café Excepcionalmente Intenso e Licoroso");
+
+// Adicionar outras capsulas
+
+void mostrar (struct capsula c) {
+
+	printf("Nome: ");
+	for (int i = 0; i <=20; i++) {
+		if (c.nome == "\0")
+			break;
+		printf("%c",c.nome[i]);
+	
+	}
+	
+	printf ("\n");
+	
+	printf("Descrição: ");
+	for (int i = 0; i <=50, i++) {
+		if (c.descricao == "\0")
+			break
+		printf("%c",c.descricao);
+	}
+	
+	printf ("\n");
+
+}
 
 
 #endif /* COFFE_H *?
